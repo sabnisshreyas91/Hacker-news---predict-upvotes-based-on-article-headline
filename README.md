@@ -19,7 +19,8 @@ The flow in preparing the data as per the bag of words model is as below:
 
 4) Ignore any words that appear just once, as they have no predictive power. Remove 'stopwords' - such as 'the','is','are' etc. These words tend to have the highest frequency and don't necessarily correlate with the number of upvotes. For this experiment we will use the pre-defined list of stop words in the python Natural Language toolkit.
 
-5) Once stop words have been removed, analyze the frequency distribution of the rest of the words to identify the subset of words to use in the bag of words model. Each of these words will be a feature that our linear regression model will use for prediction.
+5) Once stop words have been removed, analyze the frequency distribution of the rest of the words to identify the subset of words to use in the bag of words model. Each of these words will be a feature that our linear regression model will use for prediction. The dataset we use for our linear regression model will look as below:
+![Screenshot3](counts_df.PNG)
 
 6) Train linear regression model with 80% of the dataset and calculate RMSE using the 20% test set.
 
